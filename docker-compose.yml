@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: test_image
+    container_name: test_container
+    ports:
+      - "3000:3000"
+        #volumes:
+      #-
